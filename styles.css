@@ -1,0 +1,136 @@
+/* Reset default browser styles */
+body, h1, p, table, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://source.unsplash.com/random/1920x1080?race') no-repeat center center fixed;
+    background-size: cover;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgba(43, 46, 50, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f5f5f5;
+    font-size: 2.5em;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in-out 0.2s both;
+}
+
+input[type="text"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    width: 250px;
+    background-color: #383c42;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #4caf50;
+}
+
+button {
+    padding: 12px 18px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.info-section {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #c0c0c0;
+    animation: fadeIn 1s ease-in-out 0.4s both;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out 0.6s both;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    color: #e0e0e0;
+}
+
+th {
+    background-color: #3a3e44;
+    color: #f5f5f5;
+    font-weight: bold;
+}
+
+td {
+    background-color: #2f3339;
+}
+
+a {
+    color: #4caf50;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #7bff89;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
